@@ -34,7 +34,6 @@ move_speed=4;
 side_speed=2;
 player_health=100;
 image_speed=0;
-//just a test comment//
 </string>
           </argument>
         </arguments>
