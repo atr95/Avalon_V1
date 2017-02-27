@@ -6,12 +6,18 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_main_menu</sprite>
-    <sprite>sprites\spr_enemy</sprite>
-    <sprite>sprites\spr_player_bullet</sprite>
-    <sprite>sprites\spr_splash_screen</sprite>
-    <sprite>sprites\spr_player_1</sprite>
-    <sprite>sprites\spr_player_shield</sprite>
+    <sprites name="spr_group_menu">
+      <sprite>sprites\spr_splash_screen</sprite>
+      <sprite>sprites\spr_main_menu</sprite>
+    </sprites>
+    <sprites name="spr_group_player">
+      <sprite>sprites\spr_player_shield</sprite>
+      <sprite>sprites\spr_player_1</sprite>
+      <sprite>sprites\spr_player_bullet</sprite>
+    </sprites>
+    <sprites name="spr_group_enemy">
+      <sprite>sprites\spr_enemy</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_menu</background>
@@ -25,24 +31,30 @@
     <font>fonts\font_main_menu</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_bullet</object>
-    <object>objects\obj_enemy_bullet</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_player_base</object>
-    <object>objects\obj_player_shield</object>
-    <object>objects\obj_player_2</object>
     <object>objects\obj_test_controls</object>
-    <objects name="group_obj_menu">
+    <objects name="obj_group_menu">
       <object>objects\obj_main_menu</object>
       <object>objects\obj_chapter_select</object>
       <object>objects\obj_team_name</object>
+    </objects>
+    <objects name="obj_group_player">
+      <object>objects\obj_player_base</object>
+      <object>objects\obj_player_2</object>
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_player_shield</object>
+    </objects>
+    <objects name="obj_group_enemy">
+      <object>objects\obj_enemy_bullet</object>
+      <object>objects\obj_enemy</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash_screen</room>
     <room>rooms\rm_main_menu</room>
-    <room>rooms\rm_testing</room>
-    <room>rooms\rm_testing_2</room>
+    <room>rooms\rm_level_1</room>
+    <room>rooms\rm_level_2</room>
+    <room>rooms\rm_level_3</room>
+    <room>rooms\rm_level_4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

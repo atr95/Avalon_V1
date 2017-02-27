@@ -6,36 +6,37 @@ switch (menu_position)
 //All Chapters
     case 0:
     {
-    //ends the game
-        room_goto(rm_testing);
+    //all chapters (story start yes)
+    //set global variable that makes story happen)
+        room_goto(rm_level_1);
         break;
     }
 //Chapter 1
     case 1:
     {
-    //ends the game
-        room_goto(rm_testing);
+    //level 1 (story no)
+        room_goto(rm_level_1);
         break;
     }
 //Chapter 2
     case 2:
     {
-    //ends the game
-        room_goto(rm_testing_2);
+    //level 2 (story no)
+        room_goto(rm_level_2);
         break;
     }
 //Chapter 3
     case 3:
     {
-    //ends the game
-        game_end();
+    //level 3 (story no)
+        room_goto(rm_level_3);
         break;
     }
 //Chapter 4
     case 4:
     {
-    //ends the game
-        game_end();
+    //level 4 (story no)
+        room_goto(rm_level_4);
         break;
     }
 //default

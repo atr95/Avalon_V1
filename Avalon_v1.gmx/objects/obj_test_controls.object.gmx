@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -42,6 +42,11 @@
 //it differs from a local variable in that it can be accessed between different files
 //within this objects code.
 end_game=0;
+level_reset=0;
+level_change_1=0;
+level_change_2=0;
+level_change_3=0;
+level_change_4=0;
 </string>
           </argument>
         </arguments>
@@ -72,6 +77,33 @@ if (end_game == 1)
 {
 //if it equals 1, we end the game.
     game_end();
+}
+
+level_reset = max(keyboard_check_released(ord("0")),0);
+if (level_reset==1)
+{
+    room_goto(room);
+
+}
+level_change_1 = max(keyboard_check_released(ord("1")),0);
+if (level_change_1==1)
+{
+    room_goto(rm_level_1);
+}
+level_change_2 = max(keyboard_check_released(ord("2")),0);
+if (level_change_2==1)
+{
+    room_goto(rm_level_2);
+}
+level_change_3 = max(keyboard_check_released(ord("3")),0);
+if (level_change_3==1)
+{
+    room_goto(rm_level_3);
+}
+level_change_4 = max(keyboard_check_released(ord("4")),0);
+if (level_change_4==1)
+{
+    room_goto(rm_level_4);
 }
 </string>
           </argument>
