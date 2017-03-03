@@ -123,7 +123,7 @@ else
 {
     if(fade_out==false)
     {
-        x_fly+=6;
+        x_fly+=8;
         if(x+x_fly&gt;room_width+sprite_width)
         {
             fade_out=true;

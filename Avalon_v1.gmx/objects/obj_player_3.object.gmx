@@ -45,7 +45,7 @@ left_press=false;
 down_press=false;
 right_press=false;
 shield_status=false;
-shield_cooldown=10;
+shield_cooldown=5;
 
 //lance controls
 q_press=false;
