@@ -46,6 +46,15 @@ down_press=false;
 right_press=false;
 shield_status=false;
 shield_cooldown=10;
+
+//lance controls
+q_press=false;
+e_press=false;
+lance_cost=25;
+
+//beam controls
+shift_press=false;
+beam_cost=50;
 </string>
           </argument>
         </arguments>
@@ -141,9 +150,6 @@ if(space==true)
     }
 }
 
-
-
-
 //shield code
 up_press = (keyboard_check(vk_up));
 left_press = (keyboard_check(vk_left));
@@ -193,6 +199,42 @@ if(shield_status==false)
     alarm[0]=room_speed*shield_cooldown;
     }
 }
+
+//lance controls
+q_press = (keyboard_check_released(ord('Q')));
+e_press = (keyboard_check_released(ord('E')));
+
+if(q_press==true)
+{
+    if(ammo&gt;=lance_cost)
+    {
+        ammo-=lance_cost;
+        instance_create(x,y,obj_q_bullet);
+    }
+}
+
+if(e_press==true)
+{
+    if(ammo&gt;=lance_cost)
+    {
+        ammo-=lance_cost;
+        instance_create(x,y,obj_e_bullet);
+    }
+}
+
+//beam controls
+shift_press = (keyboard_check_pressed(vk_shift));
+
+if(shift_press ==true)
+{
+        if(ammo&gt;=beam_cost)
+        {
+            ammo-=beam_cost;
+            instance_create(x,y,obj_beam);
+        }
+}
+
+
 </string>
           </argument>
         </arguments>

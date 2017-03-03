@@ -33,6 +33,8 @@ space=false;
 move_speed=4;
 side_speed=2;
 player_health=100;
+ammo=100;
+base_gun_cost=10;
 image_speed=0;
 </string>
           </argument>
@@ -60,7 +62,7 @@ image_speed=0;
 s_press = (keyboard_check(ord('S')));
 a_press = (keyboard_check(ord('A')));
 d_press = (keyboard_check(ord('D')));
-space = (keyboard_check_pressed(vk_space));
+space = (keyboard_check_released(vk_space));
 
 if(w_press==true)
 {
@@ -90,9 +92,19 @@ if(d_press==true)
         x+=move_speed*side_speed;
     }
 }
+
+if(ammo&lt;100)
+    {
+    ammo++;
+    }
+
 if(space==true)
 {
-instance_create(x,y,obj_bullet);
+    if(ammo&gt;=base_gun_cost)
+    {
+        instance_create(x,y,obj_bullet);
+        ammo-=base_gun_cost;
+    }
 }
 
 </string>

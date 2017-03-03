@@ -14,6 +14,9 @@
       <sprite>sprites\spr_player_shield</sprite>
       <sprite>sprites\spr_player_1</sprite>
       <sprite>sprites\spr_player_bullet</sprite>
+      <sprite>sprites\spr_beam</sprite>
+      <sprite>sprites\spr_q_bullet</sprite>
+      <sprite>sprites\spr_e_bullet</sprite>
     </sprites>
     <sprites name="spr_group_enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -40,7 +43,12 @@
     <objects name="obj_group_player">
       <object>objects\obj_player_base</object>
       <object>objects\obj_player_2</object>
+      <object>objects\obj_player_3</object>
+      <object>objects\obj_player_4</object>
       <object>objects\obj_bullet</object>
+      <object>objects\obj_beam</object>
+      <object>objects\obj_q_bullet</object>
+      <object>objects\obj_e_bullet</object>
       <object>objects\obj_player_shield</object>
     </objects>
     <objects name="obj_group_enemy">
