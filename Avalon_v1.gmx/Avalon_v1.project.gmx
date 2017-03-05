@@ -20,6 +20,7 @@
     </sprites>
     <sprites name="spr_group_enemy">
       <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\enemy_bullet</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
