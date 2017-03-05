@@ -29,6 +29,9 @@
   <scripts name="scripts">
     <script>scripts\scr_main_menu.gml</script>
     <script>scripts\scr_chapter_select.gml</script>
+    <scripts name="level_1">
+      <script>scripts\scr_checkerboard_1.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_main_menu</font>
@@ -54,6 +57,12 @@
     <objects name="obj_group_enemy">
       <object>objects\obj_enemy_bullet</object>
       <object>objects\obj_enemy</object>
+    </objects>
+    <objects name="obj_group_level_spawners">
+      <object>objects\obj_spawn_controller_lvl1</object>
+      <object>objects\obj_spawn_controller_lvl2</object>
+      <object>objects\obj_spawn_controller_lvl3</object>
+      <object>objects\obj_spawn_controller_lvl4</object>
     </objects>
   </objects>
   <rooms name="rooms">
