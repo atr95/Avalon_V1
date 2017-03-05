@@ -35,6 +35,7 @@
     <script>scripts\scr_chapter_select.gml</script>
     <scripts name="level_1">
       <script>scripts\scr_checkerboard_1.gml</script>
+      <script>scripts\scr_checkerboard_2.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">

@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>enemy_health=100;
 alarm[0]=room_speed;
-global.enemies += 1;
 </string>
           </argument>
         </arguments>

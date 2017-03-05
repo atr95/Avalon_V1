@@ -1,9 +1,8 @@
 //Checkerboard Pattern. Back row.
-
-
-instance_create(64, 64, obj_enemy);
-instance_create(196, 64, obj_enemy);
-instance_create(320, 64, obj_enemy);
-instance_create(448, 64, obj_enemy);
-instance_create(576, 64, obj_enemy);
-instance_create(704, 64, obj_enemy);
+var x_val;
+var y_val = 64;
+for(x_val = 64; x_val < 736; x_val += 128)
+{
+    instance_create(x_val, y_val, obj_grunt_base);
+}
+global.enemies += 6;
