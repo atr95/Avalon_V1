@@ -59,6 +59,9 @@
       <object>objects\obj_q_bullet</object>
       <object>objects\obj_e_bullet</object>
       <object>objects\obj_player_shield</object>
+      <objects name="obj_group_gui">
+        <object>objects\obj_hud</object>
+      </objects>
     </objects>
     <objects name="obj_group_enemy">
       <object>objects\obj_enemy_bullet</object>

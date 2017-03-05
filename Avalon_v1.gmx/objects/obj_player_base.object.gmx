@@ -30,8 +30,8 @@ a_press=false;
 s_press=false;
 d_press=false;
 space=false;
-move_speed=4;
-side_speed=2;
+move_speed=8;
+side_speed=1;
 player_health=100;
 ammo=100;
 base_gun_cost=10;
@@ -102,7 +102,7 @@ if(w_press==true)
 }
 if(s_press==true)
 {
-    if(y&lt;room_height-sprite_height/2)
+    if(y&lt;room_height-104-sprite_height/2)
     {
         y+=move_speed;
     }
@@ -163,55 +163,6 @@ y-=2;
           <argument>
             <kind>1</kind>
             <string>player_health-=1;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="74">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_set_color(c_white);
-draw_set_font(font_main_menu);
-draw_sprite(spr_hud,0,0,0);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>draw_text(32,32,"fps: " + string(fps));
-
 </string>
           </argument>
         </arguments>
