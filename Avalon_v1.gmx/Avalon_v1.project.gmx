@@ -21,6 +21,9 @@
     <sprites name="spr_group_enemy">
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_enemy_bullet</sprite>
+      <sprite>sprites\spr_lancer_base</sprite>
+      <sprite>sprites\spr_dreadnought_base</sprite>
+      <sprite>sprites\spr_grunt_base</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -59,6 +62,10 @@
     <objects name="obj_group_enemy">
       <object>objects\obj_enemy_bullet</object>
       <object>objects\obj_enemy</object>
+      <object>objects\obj_enemy_parent</object>
+      <objects name="obj_group_grunt">
+        <object>objects\obj_grunt_base</object>
+      </objects>
     </objects>
     <objects name="obj_group_level_spawners">
       <object>objects\obj_spawn_controller_lvl1</object>
