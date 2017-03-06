@@ -36,7 +36,11 @@
     <script>scripts\scr_chapter_select.gml</script>
     <scripts name="level_1">
       <script>scripts\scr_checkerboard_1.gml</script>
-      <script>scripts\scr_checkerboard_2.gml</script>
+      <script>scripts\scr_lancer_single.gml</script>
+      <script>scripts\scr_lancer_pair.gml</script>
+      <script>scripts\scr_grunt_running_pyramid.gml</script>
+      <script>scripts\scr_grunt_mobile_line.gml</script>
+      <script>scripts\scr_grunt_trackers.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
