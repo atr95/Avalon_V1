@@ -26,7 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>speed=16;
-direction=obj_grunt_parent.image_angle-90;
+inst=instance_nearest(x,y,obj_grunt_parent);
+direction=inst.image_angle-90;
 image_angle=direction-90;
 //this bullet goes in whatever direction the parent is facing.
 </string>
