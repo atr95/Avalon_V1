@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>enemy_health=100;
+            <string>enemy_health=50;
 move_1=true;
 move_2=false;
 move_3=false;
