@@ -17,6 +17,7 @@
       <sprite>sprites\spr_beam</sprite>
       <sprite>sprites\spr_q_bullet</sprite>
       <sprite>sprites\spr_e_bullet</sprite>
+      <sprite>sprites\spr_hud</sprite>
     </sprites>
     <sprites name="spr_group_enemy">
       <sprite>sprites\spr_enemy</sprite>
@@ -49,19 +50,22 @@
       <object>objects\obj_team_name</object>
     </objects>
     <objects name="obj_group_player">
-      <object>objects\obj_player_base</object>
-      <object>objects\obj_player_2</object>
-      <object>objects\obj_player_3</object>
-      <object>objects\obj_player_4</object>
+      <object>objects\obj_player_parent</object>
+      <object>objects\obj_player_lvl_1</object>
+      <object>objects\obj_player_lvl_2</object>
+      <object>objects\obj_player_lvl_3</object>
+      <object>objects\obj_player_lvl_4</object>
       <object>objects\obj_bullet</object>
       <object>objects\obj_beam</object>
       <object>objects\obj_q_bullet</object>
       <object>objects\obj_e_bullet</object>
       <object>objects\obj_player_shield</object>
+      <objects name="obj_group_gui">
+        <object>objects\obj_hud</object>
+      </objects>
     </objects>
     <objects name="obj_group_enemy">
       <object>objects\obj_enemy_bullet</object>
-      <object>objects\obj_enemy</object>
       <object>objects\obj_enemy_parent</object>
       <objects name="obj_group_grunt">
         <object>objects\obj_grunt_base</object>
