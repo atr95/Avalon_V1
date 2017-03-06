@@ -12,7 +12,7 @@
     </sprites>
     <sprites name="spr_group_player">
       <sprite>sprites\spr_player_shield</sprite>
-      <sprite>sprites\spr_player_1</sprite>
+      <sprite>sprites\spr_player</sprite>
       <sprite>sprites\spr_player_bullet</sprite>
       <sprite>sprites\spr_beam</sprite>
       <sprite>sprites\spr_q_bullet</sprite>
@@ -55,21 +55,30 @@
       <object>objects\obj_player_lvl_2</object>
       <object>objects\obj_player_lvl_3</object>
       <object>objects\obj_player_lvl_4</object>
-      <object>objects\obj_bullet</object>
-      <object>objects\obj_beam</object>
-      <object>objects\obj_q_bullet</object>
-      <object>objects\obj_e_bullet</object>
       <object>objects\obj_player_shield</object>
       <objects name="obj_group_gui">
         <object>objects\obj_hud</object>
       </objects>
+      <objects name="obj_player_bullet">
+        <object>objects\obj_player_bullet_parent</object>
+        <object>objects\obj_bullet</object>
+        <object>objects\obj_beam</object>
+        <object>objects\obj_q_bullet</object>
+        <object>objects\obj_e_bullet</object>
+      </objects>
     </objects>
     <objects name="obj_group_enemy">
-      <object>objects\obj_enemy_bullet</object>
       <object>objects\obj_enemy_parent</object>
       <objects name="obj_group_grunt">
-        <object>objects\obj_grunt_base</object>
+        <object>objects\obj_grunt_parent</object>
         <object>objects\obj_grunt_1</object>
+        <object>objects\obj_grunt_2</object>
+        <object>objects\obj_grunt_3</object>
+        <object>objects\obj_grunt_4</object>
+      </objects>
+      <objects name="obj_enemy_bullet">
+        <object>objects\obj_enemy_bullet_parent</object>
+        <object>objects\obj_grunt_bullet</object>
       </objects>
     </objects>
     <objects name="obj_group_level_spawners">
