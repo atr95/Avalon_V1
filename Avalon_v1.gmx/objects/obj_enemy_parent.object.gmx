@@ -78,6 +78,10 @@ enemy_health=100;
 {
 instance_destroy();
 }
+if(obj_player_parent.start==false)
+{
+//don't shoot and don't move
+}
 </string>
           </argument>
         </arguments>

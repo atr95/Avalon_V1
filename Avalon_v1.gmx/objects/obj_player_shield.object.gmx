@@ -29,10 +29,8 @@
 a_press=false;
 s_press=false;
 d_press=false;
-move_speed=4;
-side_speed=2;
 image_speed=0;
-alarm[0]=room_speed * 3; //shield lifespan
+alarm[0]=room_speed * 1.5; //shield lifespan
 </string>
           </argument>
         </arguments>
@@ -84,19 +82,19 @@ a_press = (keyboard_check(ord('A')));
 d_press = (keyboard_check(ord('D')));
 if(w_press==true)
 {
-        y-=move_speed;
+        y-=obj_player_parent.move_speed;
 }
 if(s_press==true)
 {
-        y+=move_speed;
+        y+=obj_player_parent.move_speed;
 }
 if(a_press==true)
 {
-        x-=move_speed*side_speed;
+        x-=obj_player_parent.move_speed*obj_player_parent.side_speed;
 }
 if(d_press==true)
 {
-        x+=move_speed*side_speed;
+        x+=obj_player_parent.move_speed*obj_player_parent.side_speed;
 }
 </string>
           </argument>
