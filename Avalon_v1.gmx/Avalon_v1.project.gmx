@@ -69,6 +69,7 @@
       <object>objects\obj_enemy_parent</object>
       <objects name="obj_group_grunt">
         <object>objects\obj_grunt_base</object>
+        <object>objects\obj_grunt_1</object>
       </objects>
     </objects>
     <objects name="obj_group_level_spawners">
