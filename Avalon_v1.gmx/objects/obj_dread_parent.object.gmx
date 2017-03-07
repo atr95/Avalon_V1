@@ -8,6 +8,106 @@
   <parentName>obj_enemy_parent</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
+    <event eventtype="2" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[3] = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="3">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Bullet barrage. 
+alarm[3] = room_speed / 4;
+var i =0;
+for (i = 0; i &lt; 6; i++)
+{
+    instance_create(x - 32 + (i * 12), y, obj_dread_bullet);
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[1] = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>// Repeated homing bullets.
+alarm[1] = room_speed / 10;
+    instance_create(x, y, obj_lancer_bullet);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -27,9 +127,40 @@
             <kind>1</kind>
             <string>if(obj_player_parent.start!=false)
 {
+    //alarm[1] = room_speed * 6;
+   var attack = irandom_range(1, 4); // Roll for attack
    
+   switch (attack)
+   {    // Bullet barrage
+        case (1):
+            var i =0;
+            for (i = 0; i &lt; 6; i++)
+            {
+                instance_create(x - 32 + (i * 12), y, obj_dread_bullet);
+            }
+            break;
+            
+            
+        case (2):
+            var i =0;
+            for (i = 0; i &lt; 6; i++)
+            {
+                instance_create(x - 32 + (i * 12), y, obj_dread_bullet);
+            }
+            break;
+        // Homing bullets
+        case (3):
+            alarm[1] = room_speed / 2;
+            alarm[2] = room_speed * 1.5;
+            break;
+            
+        case (4):
+            alarm[3] = 1;
+            alarm[4] = room_speed;
+            break;
+   }
 }
-alarm[0]=room_speed*2;
+alarm[0] = room_speed * 2;
 </string>
           </argument>
         </arguments>
