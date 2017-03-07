@@ -352,6 +352,7 @@ alarm[0]=3*room_speed;
 }
 else
 {
+    player_health=0;
     //death sprite
     image_index=sprite_death;
     if(player_lives&gt;=0)
@@ -393,7 +394,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_health-=100;
+            <string>if(start==true)
+{
+player_health-=100;
+}
 </string>
           </argument>
         </arguments>
@@ -416,7 +420,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_health-=10;
+            <string>if(start==true)
+{
+player_health-=10;
+}
 </string>
           </argument>
         </arguments>
@@ -439,7 +446,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_health-=50;
+            <string>if(start==true)
+{
+player_health-=50;
+}
 </string>
           </argument>
         </arguments>
@@ -462,7 +472,10 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>player_health-=25;
+            <string>if(start==true)
+{
+player_health-=25;
+}
 </string>
           </argument>
         </arguments>
