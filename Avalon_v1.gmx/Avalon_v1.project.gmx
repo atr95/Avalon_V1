@@ -81,6 +81,7 @@
         <object>objects\obj_grunt_2</object>
         <object>objects\obj_grunt_3</object>
         <object>objects\obj_grunt_4</object>
+        <object>objects\obj_grunt_5</object>
       </objects>
       <objects name="obj_group_lancer">
         <object>objects\obj_lancer_parent</object>

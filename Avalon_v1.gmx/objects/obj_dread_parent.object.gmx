@@ -125,7 +125,7 @@ alarm[1] = room_speed / 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_player_parent.start!=false)
+            <string>if(obj_player_parent.start!=false &amp;&amp; obj_player_parent.died!=true)
 {
     //alarm[1] = room_speed * 6;
    var attack = irandom_range(1, 4); // Roll for attack

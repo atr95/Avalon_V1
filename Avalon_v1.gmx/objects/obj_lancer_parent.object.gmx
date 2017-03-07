@@ -25,9 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(obj_player_parent.start!=false)
+            <string>if(obj_player_parent.start!=false &amp;&amp; obj_player_parent.died!=true)
 {
-    instance_create(x,y,obj_lancer_bullet);
+    if(obj_player_parent.y&gt;y)
+    {
+        instance_create(x,y,obj_lancer_bullet);
+    }
 }
 alarm[0]=room_speed*1;
 </string>
