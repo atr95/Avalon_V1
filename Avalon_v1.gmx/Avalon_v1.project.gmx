@@ -105,8 +105,8 @@
       <objects name="obj_group_lancer">
         <object>objects\obj_lancer_parent</object>
         <object>objects\obj_lancer_1</object>
-        <object>objects\obj_lancer_2</object>
-        <object>objects\obj_lancer_3</object>
+        <object>objects\obj_lancer_2_a</object>
+        <object>objects\obj_lancer_3_a</object>
       </objects>
       <objects name="obj_enemy_bullet">
         <object>objects\obj_enemy_bullet_parent</object>
