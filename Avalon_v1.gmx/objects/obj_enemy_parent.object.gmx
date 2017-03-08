@@ -52,6 +52,7 @@ enemy_health=100;
           <argument>
             <kind>1</kind>
             <string>global.enemies-=1;
+//play death sound
 </string>
           </argument>
         </arguments>
