@@ -54,7 +54,8 @@ alarm[0]=room_speed*1;
 
 if (x &gt; room_width + 128)
 {
-    instance_create(x, y - 128, obj_lancer_3); 
+    instance_create(x, y + 128, obj_lancer_3_a); 
+    global.enemies += 1;
     instance_destroy();       
 }
 

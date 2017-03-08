@@ -58,6 +58,7 @@
     <scripts name="scr_group_lancer_spawns">
       <script>scripts\scr_lancer_pentad.gml</script>
       <script>scripts\scr_lancer_single.gml</script>
+      <script>scripts\scr_lancer_sideways_1.gml</script>
       <script>scripts\scr_lancer_pair.gml</script>
     </scripts>
     <scripts name="scr_group_dread_spawns">
