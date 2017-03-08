@@ -9,7 +9,6 @@
     <sprites name="spr_group_menu">
       <sprite>sprites\spr_splash_screen</sprite>
       <sprite>sprites\spr_main_menu</sprite>
-      <sprite>sprites\spr_title</sprite>
     </sprites>
     <sprites name="spr_group_player">
       <sprite>sprites\spr_player_shield</sprite>
@@ -23,11 +22,23 @@
     <sprites name="spr_group_enemy">
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_enemy_bullet</sprite>
-      <sprite>sprites\spr_lancer_base</sprite>
-      <sprite>sprites\spr_dreadnought_base</sprite>
-      <sprite>sprites\spr_grunt_base</sprite>
+      <sprites name="spr_group_grunt">
+        <sprite>sprites\spr_grunt_base</sprite>
+        <sprite>sprites\spr_grunt_1</sprite>
+        <sprite>sprites\spr_grunt_2</sprite>
+        <sprite>sprites\spr_grunt_3</sprite>
+      </sprites>
+      <sprites name="spr_group_lancer">
+        <sprite>sprites\spr_lancer_base</sprite>
+        <sprite>sprites\spr_lancer_1</sprite>
+        <sprite>sprites\spr_lancer_2_Alex</sprite>
+        <sprite>sprites\spr_lancer_3_Alex</sprite>
+      </sprites>
+      <sprites name="spr_group_dread">
+        <sprite>sprites\spr_dreadnought_base</sprite>
+        <sprite>sprites\spr_dread_1</sprite>
+      </sprites>
     </sprites>
-    <sprite>sprites\spr_medkit</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_main_menu</background>
@@ -36,29 +47,32 @@
   <scripts name="scripts">
     <script>scripts\scr_main_menu.gml</script>
     <script>scripts\scr_chapter_select.gml</script>
-    <scripts name="level_1">
+    <scripts name="scr_group_grunt_spawns">
       <script>scripts\scr_grunt_4_back.gml</script>
-      <script>scripts\scr_lancer_single.gml</script>
-      <script>scripts\scr_dread_1.gml</script>
-      <script>scripts\scr_lancer_pair.gml</script>
       <script>scripts\scr_grunt_running_pyramid.gml</script>
       <script>scripts\scr_grunt_mobile_line.gml</script>
       <script>scripts\scr_grunt_trackers_2.gml</script>
       <script>scripts\scr_grunt_trackers_4.gml</script>
+      <script>scripts\scr_grunt_running_diaganal_5.gml</script>
+    </scripts>
+    <scripts name="scr_group_lancer_spawns">
+      <script>scripts\scr_lancer_pentad.gml</script>
+      <script>scripts\scr_lancer_single.gml</script>
+      <script>scripts\scr_lancer_pair.gml</script>
+    </scripts>
+    <scripts name="scr_group_dread_spawns">
+      <script>scripts\scr_dread_1.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_main_menu</font>
   </fonts>
   <objects name="objects">
-    <object>objects\obj_level_planner</object>
-    <object>objects\obj_music</object>
     <object>objects\obj_test_controls</object>
     <objects name="obj_group_menu">
       <object>objects\obj_main_menu</object>
       <object>objects\obj_chapter_select</object>
       <object>objects\obj_team_name</object>
-      <object>objects\obj_title</object>
     </objects>
     <objects name="obj_group_player">
       <object>objects\obj_player_parent</object>
@@ -91,10 +105,8 @@
       <objects name="obj_group_lancer">
         <object>objects\obj_lancer_parent</object>
         <object>objects\obj_lancer_1</object>
-        <object>objects\obj_lancer_2</object>
-        <object>objects\obj_lancer_3</object>
-        <object>objects\obj_lancer_4</object>
-        <object>objects\obj_lancer_5</object>
+        <object>objects\obj_lancer_2_a</object>
+        <object>objects\obj_lancer_3_a</object>
       </objects>
       <objects name="obj_enemy_bullet">
         <object>objects\obj_enemy_bullet_parent</object>
@@ -113,7 +125,6 @@
       <object>objects\obj_spawn_controller_lvl3</object>
       <object>objects\obj_spawn_controller_lvl4</object>
     </objects>
-    <object>objects\obj_medkit</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_splash_screen</room>

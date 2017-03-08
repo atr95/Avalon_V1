@@ -46,6 +46,13 @@ if(string_width(string(menu[i]))&gt;l)
 a=0;
 background_alpha[0]=0;
 
+//cylce images
+//relevent for menu cursor that has animation
+/*
+alarm[0]=room_speed*0.5;
+image_speed=0;
+image=0;
+*/
 //Button variables
 
 move = 0;
@@ -159,7 +166,7 @@ for(i=0; i &lt; array_length_1d(menu); i += 1)
 draw_sprite(sprite_index, 0, x, y+(menu_position * space));
 
 //when we get a title, here is the code for drawing that.
-draw_sprite(spr_title,0,384,256);
+//draw_sprite(spr_title,0,512,256);
 </string>
           </argument>
         </arguments>
