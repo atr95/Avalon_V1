@@ -233,10 +233,12 @@ if(global.enemies &lt; 1)
         case (7):
         alarm[4] = 0; // stop the hell.
         scr_dread_1();
+        alarm[1] = 1;
             global.encounter_number += 1;
             break;
             
         case (8):
+        alarm[1] = 0;
             global.encounter_number += 1;
             break;
             

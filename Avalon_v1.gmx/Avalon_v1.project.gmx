@@ -22,7 +22,6 @@
     <sprites name="spr_group_enemy">
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_enemy_bullet</sprite>
-      <sprite>sprites\spr_dreadnought_base</sprite>
       <sprites name="spr_group_grunt">
         <sprite>sprites\spr_grunt_base</sprite>
         <sprite>sprites\spr_grunt_1</sprite>
@@ -32,6 +31,12 @@
       <sprites name="spr_group_lancer">
         <sprite>sprites\spr_lancer_base</sprite>
         <sprite>sprites\spr_lancer_1</sprite>
+        <sprite>sprites\spr_lancer_2_Alex</sprite>
+        <sprite>sprites\spr_lancer_3_Alex</sprite>
+      </sprites>
+      <sprites name="spr_group_dread">
+        <sprite>sprites\spr_dreadnought_base</sprite>
+        <sprite>sprites\spr_dread_1</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -40,21 +45,23 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <scripts name="level_2">
-      <script>scripts\scr_grunt_running_pyramid_2.gml</script>
-      <script>scripts\scr_lancer_pentad.gml</script>
-    </scripts>
     <script>scripts\scr_main_menu.gml</script>
     <script>scripts\scr_chapter_select.gml</script>
-    <scripts name="level_1">
+    <scripts name="scr_group_grunt_spawns">
       <script>scripts\scr_grunt_4_back.gml</script>
-      <script>scripts\scr_lancer_single.gml</script>
-      <script>scripts\scr_dread_1.gml</script>
-      <script>scripts\scr_lancer_pair.gml</script>
       <script>scripts\scr_grunt_running_pyramid.gml</script>
       <script>scripts\scr_grunt_mobile_line.gml</script>
       <script>scripts\scr_grunt_trackers_2.gml</script>
       <script>scripts\scr_grunt_trackers_4.gml</script>
+      <script>scripts\scr_grunt_running_diaganal_5.gml</script>
+    </scripts>
+    <scripts name="scr_group_lancer_spawns">
+      <script>scripts\scr_lancer_pentad.gml</script>
+      <script>scripts\scr_lancer_single.gml</script>
+      <script>scripts\scr_lancer_pair.gml</script>
+    </scripts>
+    <scripts name="scr_group_dread_spawns">
+      <script>scripts\scr_dread_1.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
