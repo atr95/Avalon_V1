@@ -189,8 +189,8 @@ if(global.enemies &lt; 1)
     {
        
         case (0):
-            scr_grunt_running_pyramid_2();
-            scr_grunt_running_pyramid_2();
+            scr_grunt_running_diaganal_5();
+            scr_grunt_running_diaganal_5();
             global.encounter_number += 1;
             break;
        
