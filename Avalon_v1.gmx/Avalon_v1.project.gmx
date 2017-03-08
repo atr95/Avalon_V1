@@ -22,9 +22,17 @@
     <sprites name="spr_group_enemy">
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_enemy_bullet</sprite>
-      <sprite>sprites\spr_lancer_base</sprite>
       <sprite>sprites\spr_dreadnought_base</sprite>
-      <sprite>sprites\spr_grunt_base</sprite>
+      <sprites name="spr_group_grunt">
+        <sprite>sprites\spr_grunt_base</sprite>
+        <sprite>sprites\spr_grunt_1</sprite>
+        <sprite>sprites\spr_grunt_2</sprite>
+        <sprite>sprites\spr_grunt_3</sprite>
+      </sprites>
+      <sprites name="spr_group_lancer">
+        <sprite>sprites\spr_lancer_base</sprite>
+        <sprite>sprites\spr_lancer_1</sprite>
+      </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -32,6 +40,10 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+    <scripts name="level_2">
+      <script>scripts\scr_grunt_running_pyramid_2.gml</script>
+      <script>scripts\scr_lancer_pentad.gml</script>
+    </scripts>
     <script>scripts\scr_main_menu.gml</script>
     <script>scripts\scr_chapter_select.gml</script>
     <scripts name="level_1">
@@ -86,6 +98,8 @@
       <objects name="obj_group_lancer">
         <object>objects\obj_lancer_parent</object>
         <object>objects\obj_lancer_1</object>
+        <object>objects\obj_lancer_2</object>
+        <object>objects\obj_lancer_3</object>
       </objects>
       <objects name="obj_enemy_bullet">
         <object>objects\obj_enemy_bullet_parent</object>
